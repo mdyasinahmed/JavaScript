@@ -12,3 +12,7 @@ console.log(friends);
 console.log(numbers);
 numbers.pop();
 console.log(numbers);
+
+var arr = [2, 3, 4, 5];
+console.log(arr.unshift(0, 1));
+console.log(arr);
