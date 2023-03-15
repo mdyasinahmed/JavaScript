@@ -5,7 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Add Event with DOM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<style>
+    .main-box{
+        display: flex;
+    }
+    .main-box-single{
+        margin: 0px 50px;;
+    }
+</style>
 <body>
     <main id="main-container">
         <section>
@@ -53,6 +62,15 @@
                 <li>List item-4</li>
             </ul>
         </section> -->
+        <!-- section.dynamic-buttons>button*6.make-blue{Make Blue} -->
+        <section class="dynamic-buttons">
+            <button onclick="makeBlue()" class="make-blue">Make Blue</button>
+            <button onclick="makeBlack()" class="make-black">Make Black</button>
+            <button onclick="makePink()" class="make-pink">Make Pink</button>
+            <button onclick="makeYellow()"  class="make-yellow">Make Yellow</button>
+            <button onclick="makeOrange()" class="make-orange">Make Orange</button>
+            <button onclick="makeGreen()" class="make-green">Make Green</button>
+        </section>
         <section class="dynamic-changes">
             <!-- div.main-box>div*3.main-box-single>h1{Dynamic Changes Box Title-$}+p{lorem100} -->
             <div class="main-box">
@@ -74,5 +92,6 @@
     <script>
 
     </script>
+    <script src="events.js"></script>
 </body>
 </html>
